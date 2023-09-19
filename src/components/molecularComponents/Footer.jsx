@@ -1,5 +1,6 @@
 import React from 'react'
-import { Box, Flex, Image, Link, Text, Spacer } from '@chakra-ui/react'
+import { Box, Flex, Image, Text, Spacer } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 import mtLogo from '../../assets/logos/MT-logo.png'
 import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
 
@@ -17,7 +18,7 @@ const Contact = () => {
     return(
         <Box className='flex flex-row justify-between'>
             <Box >
-                <Link href=''><Image src={mtLogo} alt='MT LOGO' w={50} ml={5} className='shadow rounded-full max-w-full h-auto align-middle border-none'/></Link>
+                <Link to='/home'><Image src={mtLogo} alt='MT LOGO' w={50} ml={5} className='shadow rounded-full max-w-full h-auto align-middle border-none'/></Link>
             </Box>
             <Box className='flex flex-row space-x-5' p={15}>
                 <Text>+92-336-5522776</Text>

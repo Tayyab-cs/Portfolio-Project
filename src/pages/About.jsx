@@ -15,6 +15,7 @@ export default function About() {
 }
 
 const AboutMe = () => {
+
     return(
         <Box>
             <Heading fontWeight='bold' fontSize={50} className='text-blue-950'>About Me</Heading>

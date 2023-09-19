@@ -1,29 +1,28 @@
 import React from 'react'
 import { myImage } from '../assets/images/index'
 import { Box, Flex, Image, Text } from '@chakra-ui/react'
+import { About, TechStack, Projects} from './index'
 import waveIcon from '../assets/icons/wave.png'
 import Header from '../components/molecularComponents/Header'
-import About from './About';
-import TechStack from './TechStack';
-import Projects from './Projects';
 import Footer from '../components/molecularComponents/Footer'
 
 export default function Home() {
   return (
     <Box mx={100} my={50}>
       <Header/>
-      <Body/>
-      <About/>
-      <TechStack/>
-      <Projects/>
+      <Body />
+      <About />
+      <TechStack />
+      <Projects />
       <Footer/>
     </Box>
   )
 }
 
 const Body = () => {
+
   return(
-    <Flex justifyContent={'space-around'}>
+    <Flex justifyContent={'space-around'} >
       <Box className='w-50 h-50 overflow-hidden'>
         <Image src={myImage} alt='mtImage' className='object-cover w-full h-full rounded-lg'/>
       </Box>
