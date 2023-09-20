@@ -4,7 +4,7 @@ import { htmlGif, cssGif, chakraGif, expressGif, gitGif, gitHubGif, jsGif, mongo
 
 export default function TechStack() {
   return (
-    <Flex className='my-10' flexDirection={'column'}>
+    <Flex id='techStackId' className='my-10' flexDirection={'column'}>
         <TechInfo/>
         <StackSet/>
     </Flex>
@@ -23,7 +23,7 @@ const TechInfo = () => {
 const StackSet = () => {
     return(
         <Box mt={30}>
-            <Box className='flex flex-row p-5'>
+            <Box className='flex flex-row justify-evenly'>
                 <Image src={htmlGif} alt='htmlGif' boxSize={'150px'}/>
                 <Image src={cssGif} alt='htmlGif' boxSize={'150px'}/>
                 <Image src={jsGif} alt='htmlGif' boxSize={'150px'}/>
@@ -32,7 +32,7 @@ const StackSet = () => {
                 <Image src={expressGif} alt='htmlGif' boxSize={'150px'}/>
                 <Image src={mongoGif} alt='htmlGif' boxSize={'150px'}/>
             </Box>
-            <Box className='flex flex-row p-5'>
+            <Box className='flex flex-row justify-evenly'>
                 <Image src={mySqlGif} alt='htmlGif' boxSize={'150px'}/>
                 <Image src={tailwindGif} alt='htmlGif' boxSize={'150px'}/>
                 <Image src={chakraGif} alt='htmlGif' boxSize={'150px'}/>

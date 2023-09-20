@@ -22,7 +22,7 @@ export default function Home() {
 const Body = () => {
 
   return(
-    <Flex justifyContent={'space-around'} >
+    <Flex id='homeId' justifyContent={'space-around'}>
       <Box className='w-50 h-50 overflow-hidden'>
         <Image src={myImage} alt='mtImage' className='object-cover w-full h-full rounded-lg'/>
       </Box>

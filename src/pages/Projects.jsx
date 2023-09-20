@@ -5,7 +5,7 @@ import { Box, Card, CardBody, CardFooter, Flex, HStack, Heading, Image, Link, St
 
 export default function Projects() {
   return (
-    <Flex flexDirection={'column'}>
+    <Flex id='projectsId' flexDirection={'column'}>
         <ProjectHeader/>
         <ProjectCards/>
     </Flex>

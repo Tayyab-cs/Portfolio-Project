@@ -6,7 +6,7 @@ import { Box, Heading, Text, HStack, Flex, Spacer } from '@chakra-ui/react'
 
 export default function About() {
   return (
-    <Flex mt={50} mr={400} flexDirection={'column'}>
+    <Flex id='aboutId' mt={50} mr={400} flexDirection={'column'}>
         <AboutMe/>
         <Experience/>
         <Education/>
